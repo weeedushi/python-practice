@@ -39,3 +39,16 @@ marks.append(st6)
 
 marks.sort()
 print(marks)
+
+# Ques3- WAP to sum a list of 4 numbers
+
+numbers=[10,15,74,71]
+sum=numbers[0]+numbers[1]+numbers[2]+numbers[3]
+# OR
+print(sum(numbers))
+print(sum)
+
+# Ques4- WAP to count number of zeroes in a tuple
+
+numbers1=(100,0,27,0,0,0,123,1,0.0)
+print(numbers1.count(0))
