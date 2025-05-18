@@ -27,3 +27,47 @@ if(percent>40 and eng>33 and math>33 and arts>33):
     print("pass", percent)
 else:
     print("fail", percent)
+
+#Ques3- A spam comment is defined as a text containing following keywords:
+# "Make a lot of money", "buy now", "subscribe this", "click this". WAP to detect these spams
+
+p1="make a lot of money"
+p2="click this"
+p3="subscribe this"
+p4="buy now"
+
+str = input("enter your message: ")
+newStr= str.lower()
+
+if ((p1 in newStr) or (p2 in newStr) or (p3 in newStr) or (p4 in newStr)):
+    print("spam")
+else:
+    print("okie dokie")
+
+#Ques4- WAP to find whether a given username contains less than 10 characters or not
+
+username= input("enter username: ")
+
+if(len(username)<10):
+    print("username contain less than 10 characters")
+else:
+    print("good")
+
+# Ques5- WAP to find out whether a given name is present in a list or not
+
+l=["vidushi", "abhishek", "tushar", "sneha", "sarthak"]
+
+name=input("Enter your name: ")
+
+if(name in l):
+    print("Your name is in the list")
+else:
+    print("Your name is not on the list")
+
+#Ques6- WAP to check whether a post is talking about harry or not
+
+post = input("enter post: ")
+
+if("Harry".lower() in post.lower()):
+    print("this post is talking about Harry")
+print("thanks bye")
